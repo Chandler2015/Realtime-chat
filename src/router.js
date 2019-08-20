@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Chat from './views/Chat.vue'
+import Login from './views/Login.vue'
 
 Vue.use(Router)
 
@@ -11,7 +13,12 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Chat
+    },
+    {
+      path:'/login',
+      name:'login',
+      component:Login
     },
     {
       path: '/about',
